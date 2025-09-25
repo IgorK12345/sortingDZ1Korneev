@@ -4,8 +4,8 @@
 
 
 template<typename T>
-void optimizedbubble_sort(std::vector<T>& arr) {
-    
+int optimizedbubble_sort(std::vector<T>& arr) {
+    if (arr.size() == 0) return 0;
     for (int i = 0; i < arr.size(); i++) {
         int f = 0;
         for (int j = 0; j < arr.size() - i - 1; j++) {
@@ -21,11 +21,11 @@ void optimizedbubble_sort(std::vector<T>& arr) {
         }
     
     }
-
+    return 0;
 }
 
 
-template void optimizedbubble_sort<int>(std::vector<int>&);
-template void optimizedbubble_sort<double>(std::vector<double>&);
-template void optimizedbubble_sort<float>(std::vector<float>&);
-template void optimizedbubble_sort<char>(std::vector<char>&);
+template int optimizedbubble_sort<int>(std::vector<int>&);
+template int optimizedbubble_sort<double>(std::vector<double>&);
+template int optimizedbubble_sort<float>(std::vector<float>&);
+template int optimizedbubble_sort<char>(std::vector<char>&);

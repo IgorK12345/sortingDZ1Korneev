@@ -3,4 +3,4 @@
 #include <vector>
 
 template<typename T>
-void bubble_sort(std::vector<T>& arr);
+int bubble_sort(std::vector<T>& arr);
