@@ -139,6 +139,7 @@
     <ClCompile Include="Insertion.cpp" />
     <ClCompile Include="OptimizedBubble.cpp" />
     <ClCompile Include="Selection.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,5 +1,6 @@
 #pragma once
-class Bubble
-{
-};
 
+#include <vector>
+
+template<typename T>
+void bubble_sort(std::vector<T>& arr);
