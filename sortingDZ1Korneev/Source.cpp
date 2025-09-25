@@ -1,5 +1,6 @@
 #include "Bubble.h"
 #include "OptimizedBubble.h"
+#include "Exchange.h"
 #include <vector>
 #include <iostream>
 
@@ -8,10 +9,12 @@ int main()
 	std::vector<int> a = {1, 2, 3, 4, 5, 6};
 	std::vector<int> b = {6, 5, 4, 3, 2, 1};
 	std::vector<int> c = {2, 5, 3, 1, 6, 4};
+	std::vector<int> d = { 12, 4, 18, 7, 1, 15, 9, 20, 6, 13, 3, 16, 10, 19, 2, 8, 14, 5, 17, 11 };
 
-	optimizedbubble_sort(a);
-	optimizedbubble_sort(b);
-	optimizedbubble_sort(c);
+	exchenge_sort(a);
+	exchenge_sort(b);
+	exchenge_sort(c);
+	exchenge_sort(d);
 	
 	for (int i = 0; i < a.size(); ++i) {
 		std::cout << a[i] << " ";
@@ -23,6 +26,10 @@ int main()
 	std::cout << "\n";
 	for (int i = 0; i < c.size(); ++i) {
 		std::cout << c[i] << " ";
+	}
+	std::cout << "\n";
+	for (int i = 0; i < d.size(); ++i) {
+		std::cout << d[i] << " ";
 	}
 	std::cout << "\n";
 
