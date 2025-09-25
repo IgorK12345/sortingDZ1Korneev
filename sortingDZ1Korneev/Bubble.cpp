@@ -4,7 +4,7 @@
 template<typename T>
 void bubble_sort(std::vector<T>& arr) {
     for (int i = 0; i < arr.size(); i++) {
-        for (int j = 0; j < arr.size() - i - 1; j++) {
+        for (int j = 0; j < arr.size() - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 T x = arr[j];
                 arr[j] = arr[j + 1];

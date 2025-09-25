@@ -1,4 +1,5 @@
 #include "Bubble.h"
+#include "OptimizedBubble.h"
 #include <vector>
 #include <iostream>
 
@@ -8,9 +9,9 @@ int main()
 	std::vector<int> b = {6, 5, 4, 3, 2, 1};
 	std::vector<int> c = {2, 5, 3, 1, 6, 4};
 
-	bubble_sort(a);
-	bubble_sort(b);
-	bubble_sort(c);
+	optimizedbubble_sort(a);
+	optimizedbubble_sort(b);
+	optimizedbubble_sort(c);
 	
 	for (int i = 0; i < a.size(); ++i) {
 		std::cout << a[i] << " ";

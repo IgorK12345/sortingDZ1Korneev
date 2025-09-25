@@ -1,5 +1,6 @@
 #pragma once
-class OptimizedBubble
-{
-};
 
+#include <vector>
+
+template<typename T>
+void optimizedbubble_sort(std::vector<T>& arr);
